@@ -1,0 +1,72 @@
+.container{
+    text-align: center;
+    background-color: lightslategrey;
+   
+}
+:root {
+    --primary:lightblue;
+    --black: #333333;
+    --width-break:600px
+}
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+.textarea  .ow {
+    min-height: 5vh;
+    width: 20%;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: #333333;
+    padding-top: 1rem;
+}
+#txt-Input {
+    font-size:18px;padding:3px;
+    padding-bottom: 1rem;
+   
+}
+#txt-output {
+    overflow: scroll;
+   background-color: aliceblue;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    border: 1px solid var(--black);
+    padding-top: 1rem;
+}
+#num-Input{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    border: 1px solid var(--black);
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+button {
+    background-color: var(--primary);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+}
