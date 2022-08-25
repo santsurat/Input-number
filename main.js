@@ -2,7 +2,10 @@ let textInput = document.querySelector("#txt-Input")
 let textoutput = document.querySelector("#txt-output")
 let checkbutton = document.querySelector("#check")
 let resetButton = document.querySelector("#reset-button");
-//let numInput = document.querySelector("#num-Input")
+let button = document.querySelector("#button");
+
+
+let copyItem = "";
 
 checkbutton.addEventListener("click", buttonClickHandler)
     function buttonClickHandler(event) {
@@ -29,12 +32,22 @@ checkbutton.addEventListener("click", buttonClickHandler)
     final = final + finalChar.charAt(Math.floor(Math.random() * finalCharLength));
     }
     textoutput.innerText = final.toString();
-    //return final;
+    copyItem = final.toString();
+    return final;
     }
 }
+button.addEventListener("click",  function button() {
+console.log("copiedbutton click");
+    //debugger
+    copyItem;
+    
+    navigator.clipboard.writeText(copyItem);
+    
+    
+});
 resetButton.addEventListener("click", function ResetButton() {
     console.log("click");
     textInput.value ="";
-        textoutput.innerText ="";
+     textoutput.innerText ="";
             
 });
